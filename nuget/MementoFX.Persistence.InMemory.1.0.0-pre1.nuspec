@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+    <metadata>
+        <id>MementoFX.Persistence.InMemory</id>
+        <version>1.0.0-pre1</version>
+        <title>MementoFX EmbeddedRavenDB</title>
+        <authors>Mastreeno ltd</authors>
+        <owners>Mastreeno ltd</owners>
+        <licenseUrl>http://www.mastreeno.com/license/evaluation</licenseUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>An in-memory event store for MementoFX</description>
+        <copyright>Copyright 2016 Mastreeno ltd. All rights reserved</copyright>
+        <tags>mementofx memento ravendb cqrs event store ddd</tags>
+        <dependencies>
+            <dependency id="MementoFX" version="1.1.0-pre3" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\src\MementoFX.Persistence.InMemory\bin\Release\Memento.Persistence.InMemory.dll" target="lib\net451\Memento.Persistence.InMemory.dll" />
+        <file src="..\src\MementoFX.Persistence.InMemory\bin\Release\Memento.Persistence.InMemory.pdb" target="lib\net451\Memento.Persistence.InMemory.pdb" />
+        <file src="..\src\MementoFX.Persistence.InMemory\bin\Release\Memento.Persistence.InMemory.XML" target="lib\net451\Memento.Persistence.InMemory.XML" />
+    </files>
+</package>
