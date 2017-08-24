@@ -7,9 +7,9 @@ using Moq;
 using NUnit;
 using NUnit.Framework;
 using SharpTestsEx;
-using Memento.Messaging;
-using Memento.Persistence.InMemory.Tests.Events;
 using Memento.Domain;
+using Memento.Messaging;
+using Memento.Persistence.InMemory.Tests.Assets.Events;
 
 namespace Memento.Persistence.InMemory.Tests
 {

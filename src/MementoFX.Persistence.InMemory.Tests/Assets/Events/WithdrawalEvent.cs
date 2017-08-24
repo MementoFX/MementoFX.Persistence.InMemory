@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Memento.Persistence.InMemory.Tests.Events
+namespace Memento.Persistence.InMemory.Tests.Assets.Events
 {
-    class DepositEvent : DomainEvent
+    class WithdrawalEvent : DomainEvent
     {
         public Guid CurrentAccountId { get; set; }
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Memento.Persistence.InMemory.Tests.Events
+namespace Memento.Persistence.InMemory.Tests.Assets.Events
 {
     public class MoneyTransferredEvent : DomainEvent
     {
