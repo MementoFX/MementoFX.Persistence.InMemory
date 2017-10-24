@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Memento.Domain;
-using Memento.Persistence;
-using Memento.Messaging;
-using EventCondition = System.Linq.Expressions.Expression<System.Func<Memento.Persistence.EventMapping, bool>>;
+using MementoFX.Messaging;
 
-namespace Memento.Persistence.InMemory
+namespace MementoFX.Persistence.InMemory
 {
     /// <summary>
     /// Provides an implementation of a Memento event store
@@ -55,7 +50,8 @@ namespace Memento.Persistence.InMemory
             foreach (var m in eventDescriptors)
             {
                 var buf = from e in query
-                          where e.GetType() == m.EventType && (Guid)e.GetType().GetProperty(m.AggregateIdPropertyName).GetValue(e, null) == aggregateId
+                          where e.GetType() == m.EventType && 
+                                (Guid)e.GetType().GetProperty(m.AggregateIdPropertyName).GetValue(e, null) == aggregateId
                           select e;
                 events.AddRange(buf);
             }
