@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using MementoFX.Messaging;
 
 namespace MementoFX.Persistence.InMemory
@@ -25,9 +26,9 @@ namespace MementoFX.Persistence.InMemory
         /// <typeparam name="T">The type of the event</typeparam>
         /// <param name="filter">The requirement</param>
         /// <returns>The events which satisfy the given requirement</returns>
-        public override IEnumerable<T> Find<T>(Func<T, bool> filter)
+        public override IEnumerable<T> Find<T>(Expression<Func<T, bool>> filter)
         {
-            return Events.OfType<T>().Where(filter);
+            return Events.OfType<T>().Where(filter.Compile());
         }
 
         /// <summary>
