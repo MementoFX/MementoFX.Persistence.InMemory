@@ -1,18 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Product>MementoFX</Product>
-    <Authors>Andrea Saltarello, Mastreeno ltd</Authors>
-    <Company>Mastreeno ltd</Company>
-    <Version>2.0.0-pre2</Version>
-    <Description>An in-memory event store for Memento</Description>
-    <Copyright>© Andrea Saltarello, Mastreeno ltd 2017</Copyright>
-    <PackageProjectUrl>https://mementofx.mastreeno.com</PackageProjectUrl>
+    <Authors>Andrea Saltarello, Managed Designs</Authors>
+    <Company>Managed Designs</Company>
+    <Version>2.0.0-pre3</Version>
+    <Description>An in-memory event store for MementoFX</Description>
+    <Copyright>© 2013-2018 Andrea Saltarello, Managed Designs</Copyright>
+    <PackageProjectUrl>https://opensource.manageddesigns.it/mementofx</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/MementoFX/MementoFX.Persistence.InMemory/blob/develop/license.txt</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/MementoFX/MementoFX.Persistence.InMemory</RepositoryUrl>
-    <PackageTags>cqrs, ddd, event sourcing</PackageTags>
+    <PackageTags>mementofx, cqrs, ddd, event sourcing</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MementoFX" Version="2.0.0-pre5" />
+    <PackageReference Include="MementoFX" Version="2.0.0-pre6" />
   </ItemGroup>
 
 </Project>
